@@ -1,5 +1,5 @@
 ﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MainLayout.master.cs"
-    Inherits="TTFWebFormsToMvc.Web.Web.MainLayout" %>
+    Inherits="TTFWebFormsToMvc.Web.MainLayout" %>
 
 <!doctype html>
 <html lang="en">

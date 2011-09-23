@@ -1,0 +1,12 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/MainLayout.Master" AutoEventWireup="true"
+    CodeBehind="ProtectedLayout.master.cs" Inherits="TTFWebFormsToMvc.Web.ProtectedLayout" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="Head" runat="server">
+    <asp:ContentPlaceHolder runat="server" ID="Head" />
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="Body" runat="server">
+    <div class="horzFrame">
+        <h1>PROTECTED AREA!</h1>
+    </div>
+    <asp:ContentPlaceHolder runat="server" ID="Body" />
+</asp:Content>

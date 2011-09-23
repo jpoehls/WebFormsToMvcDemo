@@ -1,5 +1,5 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MainLayout.Master" AutoEventWireup="true"
-    CodeBehind="Login.aspx.cs" Inherits="TTFWebFormsToMvc.Web.Web.admin.Login" %>
+    CodeBehind="Login.aspx.cs" Inherits="TTFWebFormsToMvc.Web.admin.Login" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="Head" runat="server">
 </asp:Content>

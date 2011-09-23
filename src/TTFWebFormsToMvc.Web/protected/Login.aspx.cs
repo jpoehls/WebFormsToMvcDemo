@@ -6,7 +6,7 @@ using System.Web.Security;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace TTFWebFormsToMvc.Web.Web.admin
+namespace TTFWebFormsToMvc.Web.admin
 {
     public partial class Login : BasePage
     {
