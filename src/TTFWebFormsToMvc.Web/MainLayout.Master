@@ -1,0 +1,40 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MainLayout.master.cs"
+    Inherits="TTFWebFormsToMvc.Web.Web.MainLayout" %>
+
+<!doctype html>
+<html lang="en">
+<head id="Head1" runat="server">
+    <meta charset="utf-8" />
+    <title>UbberBlog</title>
+    <link rel="stylesheet" type="text/css" href="~/styles/main.css" />
+    <link rel="stylesheet" type="text/css" href="~/scripts/humane-themes/bold-dark.css"
+        media="screen" />
+    <asp:ContentPlaceHolder ID="Head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <asp:ScriptManager runat="server" AjaxFrameworkMode="Disabled">
+        <Scripts>
+            <asp:ScriptReference Path="~/scripts/jquery-1.6.4.min.js" />
+            <asp:ScriptReference Path="~/scripts/humane.min.js" />
+        </Scripts>
+    </asp:ScriptManager>
+    <script type="text/javascript">
+        humane.timeout = 2000; // 2 seconds
+        humane.waitForMove = true;
+</script>
+    <form id="form1" runat="server">
+    <asp:ContentPlaceHolder ID="Body" runat="server">
+    </asp:ContentPlaceHolder>
+    <div id="footer">
+        <h1>
+            UbberBlog</h1>
+        <ul>
+            <li>
+                <asp:HyperLink runat="server" NavigateUrl="~/admin/login.aspx">Login</asp:HyperLink>
+            </li>
+        </ul>
+    </div>
+    </form>
+</body>
+</html>

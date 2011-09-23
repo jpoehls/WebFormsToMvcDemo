@@ -3,3 +3,4 @@
 AllTests.VisualState.xml
 *.suo
 App_Data
+TestResult.xml

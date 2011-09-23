@@ -1,17 +1,30 @@
-﻿<%@ Page Title="Home Page" Language="C#" MasterPageFile="~/Site.master" AutoEventWireup="true"
-    CodeBehind="Default.aspx.cs" Inherits="TTFWebFormsToMvc.Web._Default" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MainLayout.Master" AutoEventWireup="true"
+    CodeBehind="Default.aspx.cs" Inherits="TTFWebFormsToMvc.Web.Web.Default" %>
 
-<asp:Content ID="HeaderContent" runat="server" ContentPlaceHolderID="HeadContent">
+<asp:Content ID="Content1" ContentPlaceHolderID="Head" runat="server">
 </asp:Content>
-<asp:Content ID="BodyContent" runat="server" ContentPlaceHolderID="MainContent">
-    <h2>
-        Welcome to ASP.NET!
-    </h2>
-    <p>
-        To learn more about ASP.NET visit <a href="http://www.asp.net" title="ASP.NET Website">www.asp.net</a>.
-    </p>
-    <p>
-        You can also find <a href="http://go.microsoft.com/fwlink/?LinkID=152368"
-            title="MSDN ASP.NET Docs">documentation on ASP.NET at MSDN</a>.
-    </p>
+<asp:Content ID="Content2" ContentPlaceHolderID="Body" runat="server">
+    <div class="contentFrame">
+        <div class="post">
+            <span class="date">yesterday</span>
+            <h2>
+                Title</h2>
+            <p>
+                Lorem ipsum</p>
+            <p>
+                <a href="#">Permalink</a></p>
+        </div>
+        <div class="sideList">
+            <h3>
+                Other Posts</h3>
+            <div class="projectListItem">
+                <span>a week ago</span><br />
+                <a href="Projects/Summary.aspx">Some other post about something great!</a>
+            </div>
+            <div class="projectListItem">
+                <span>a week ago</span><br />
+                <a href="Projects/Summary.aspx">A post about the world and things in it!</a>
+            </div>
+        </div>
+    </div>
 </asp:Content>

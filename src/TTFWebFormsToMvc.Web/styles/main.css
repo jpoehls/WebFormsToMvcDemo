@@ -1,0 +1,117 @@
+﻿@import url(http://fonts.googleapis.com/css?family=Antic);
+/*@font-face {
+  font-family: 'Antic';
+  font-style: normal;
+  font-weight: 400;
+  src: url('Antic-Regular.eot');
+  src: local('Antic'), local('Antic-Regular'), url('Antic-Regular.woff') format('woff');
+}*/
+
+body
+{
+    font-family: 'Antic' , sans-serif;
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    background-image: url('background1_blue.jpg');
+    background-attachment: fixed;
+    color: #eee;
+    letter-spacing: .08em;
+}
+
+a, a:visited, a:link {
+    color: lightblue;
+}
+
+a:hover {
+    color: #eee;
+    
+}
+
+input,select,textarea {
+    font-family: 'Antic' , sans-serif;
+    font-size: 20px;
+    letter-spacing: .08em;
+}
+
+.horzFrame
+{
+    margin-top: 3em;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    padding: 1em;
+    padding-left: 2em;
+    background-color:rgba(255,0,0,0.2);
+}
+
+.horzFrame td {
+    padding: .3em;
+}
+
+.contentFrame 
+{
+    margin: 2em;
+}
+
+.post {
+    float: left;
+    min-width: 600px;
+    max-width: 900px;
+}
+
+.post .date {
+    font-size: .7em;
+}
+
+.post h2 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.sideList {
+    
+}
+
+.projectListItem {
+    margin-top: 1em;
+}
+
+.projectListItem span {
+    font-size: .7em;
+}
+
+th.side
+{
+    text-align: right;
+}
+
+#footer
+{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    margin-left: .2em;
+    margin-right: .2em;
+    width: 100%;
+    border-top: 1px solid #eee;
+    background-color:rgba(255,0,0,0.2);
+    text-align: right;
+}
+
+#footer h1
+{
+    font-size: 2.5em;
+    margin: .2em .5em;
+}
+
+#footer ul {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: .5em 2em;
+    padding: 0;
+}
+
+#footer ul li {
+    list-style-type: none;
+}
