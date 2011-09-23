@@ -52,7 +52,7 @@
     <Reference Include="System.Web.ApplicationServices" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="admin\Login.aspx" />
+    <Content Include="protected\Login.aspx" />
     <Content Include="Default.aspx" />
     <Content Include="Error.aspx" />
     <Content Include="Global.asax" />
@@ -72,10 +72,10 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="admin\Login.aspx.cs">
+    <Compile Include="protected\Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
-    <Compile Include="admin\Login.aspx.designer.cs">
+    <Compile Include="protected\Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
     <Compile Include="Default.aspx.cs">
@@ -108,7 +108,7 @@
     <Folder Include="App_Data\" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="admin\Web.config" />
+    <Content Include="protected\Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Web.Debug.config">
