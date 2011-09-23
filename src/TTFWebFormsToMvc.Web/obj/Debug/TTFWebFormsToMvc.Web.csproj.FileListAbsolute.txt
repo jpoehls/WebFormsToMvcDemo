@@ -1,7 +1,0 @@
-C:\code\TTFWebFormsToMvc\src\TTFWebFormsToMvc.Web\bin\TTFWebFormsToMvc.Web.dll
-C:\code\TTFWebFormsToMvc\src\TTFWebFormsToMvc.Web\bin\TTFWebFormsToMvc.Web.pdb
-C:\code\TTFWebFormsToMvc\src\TTFWebFormsToMvc.Web\bin\TTFWebFormsToMvc.dll
-C:\code\TTFWebFormsToMvc\src\TTFWebFormsToMvc.Web\bin\TTFWebFormsToMvc.pdb
-C:\code\TTFWebFormsToMvc\src\TTFWebFormsToMvc.Web\obj\Debug\TTFWebFormsToMvc.Web.csprojResolveAssemblyReference.cache
-C:\code\TTFWebFormsToMvc\src\TTFWebFormsToMvc.Web\obj\Debug\TTFWebFormsToMvc.Web.dll
-C:\code\TTFWebFormsToMvc\src\TTFWebFormsToMvc.Web\obj\Debug\TTFWebFormsToMvc.Web.pdb

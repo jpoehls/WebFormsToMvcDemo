@@ -1,4 +1,5 @@
-[Oobj]
-[Bbin]
+[Oo]bj
+[Bb]in
 AllTests.VisualState.xml
 *.suo
+App_Data

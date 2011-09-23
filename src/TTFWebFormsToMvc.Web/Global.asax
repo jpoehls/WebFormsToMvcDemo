@@ -1,1 +1,1 @@
-﻿<%@ Application Codebehind="Global.asax.cs" Inherits="TTFWebFormsToMvc.Web.Web.Web.Global" Language="C#" %>
+﻿<%@ Application Codebehind="Global.asax.cs" Inherits="TTFWebFormsToMvc.Web.Global" Language="C#" %>

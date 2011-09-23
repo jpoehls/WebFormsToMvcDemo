@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace TTFWebFormsToMvc.Web.Web.Web {
+namespace TTFWebFormsToMvc.Web {
     
     
     public partial class _Default {

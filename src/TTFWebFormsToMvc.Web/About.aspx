@@ -1,5 +1,5 @@
 ﻿<%@ Page Title="About Us" Language="C#" MasterPageFile="~/Site.master" AutoEventWireup="true"
-    CodeBehind="About.aspx.cs" Inherits="TTFWebFormsToMvc.Web.Web.Web.About" %>
+    CodeBehind="About.aspx.cs" Inherits="TTFWebFormsToMvc.Web.About" %>
 
 <asp:Content ID="HeaderContent" runat="server" ContentPlaceHolderID="HeadContent">
 </asp:Content>
