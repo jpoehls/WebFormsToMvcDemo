@@ -17,12 +17,9 @@
         <Scripts>
             <asp:ScriptReference Path="~/scripts/jquery-1.6.4.min.js" />
             <asp:ScriptReference Path="~/scripts/humane.min.js" />
+            <asp:ScriptReference Path="~/scripts/main.js" />
         </Scripts>
     </asp:ScriptManager>
-    <script type="text/javascript">
-        humane.timeout = 2000; // 2 seconds
-        humane.waitForMove = true;
-</script>
     <form id="form1" runat="server">
     <asp:ContentPlaceHolder ID="Body" runat="server">
     </asp:ContentPlaceHolder>

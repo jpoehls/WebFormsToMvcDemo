@@ -32,6 +32,8 @@ namespace TTFWebFormsToMvc.Web.Web.admin
 
                 if (authenticated)
                 {
+                    Session.ShowWelcomeMessage(true);
+
                     // Redirection.
                     FormsAuthentication.RedirectFromLoginPage(username, createPersistentCookie: false);
                     return;
