@@ -1,0 +1,5 @@
+C:\code\TTFWebFormsToMvc\src\TTFWebFormsToMvc\bin\Debug\TTFWebFormsToMvc.dll
+C:\code\TTFWebFormsToMvc\src\TTFWebFormsToMvc\bin\Debug\TTFWebFormsToMvc.pdb
+C:\code\TTFWebFormsToMvc\src\TTFWebFormsToMvc\obj\Debug\TTFWebFormsToMvc.csprojResolveAssemblyReference.cache
+C:\code\TTFWebFormsToMvc\src\TTFWebFormsToMvc\obj\Debug\TTFWebFormsToMvc.dll
+C:\code\TTFWebFormsToMvc\src\TTFWebFormsToMvc\obj\Debug\TTFWebFormsToMvc.pdb
