@@ -52,6 +52,7 @@
     <Reference Include="System.Web.ApplicationServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="evil\Throw.aspx" />
     <Content Include="protected\Default.aspx" />
     <Content Include="protected\Login.aspx" />
     <Content Include="Default.aspx" />
@@ -75,6 +76,13 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="evil\Throw.aspx.cs">
+      <DependentUpon>Throw.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="evil\Throw.aspx.designer.cs">
+      <DependentUpon>Throw.aspx</DependentUpon>
+    </Compile>
     <Compile Include="protected\Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

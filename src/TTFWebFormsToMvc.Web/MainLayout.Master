@@ -5,7 +5,7 @@
 <html lang="en">
 <head id="Head1" runat="server">
     <meta charset="utf-8" />
-    <title>UbberBlog</title>
+    <title>WebForms to MVC</title>
     <link rel="stylesheet" type="text/css" href="~/styles/main.css" />
     <link rel="stylesheet" type="text/css" href="~/scripts/humane-themes/bold-dark.css"
         media="screen" />
@@ -25,7 +25,7 @@
     </asp:ContentPlaceHolder>
     <div id="footer">
         <h1>
-            UbberBlog</h1>
+            WebForms to MVC</h1>
         <ul>
             <li>
                 <asp:HyperLink runat="server" NavigateUrl="~/default.aspx">Home</asp:HyperLink> |

@@ -6,13 +6,24 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="Body" runat="server">
     <div class="contentFrame">
         <div class="post">
-            <span class="date">yesterday</span>
             <h2>
-                Title</h2>
-            <p>
-                Lorem ipsum</p>
-            <p>
-                <a href="#">Permalink</a></p>
+                Slides</h2>
+            <ul>
+                <li><asp:HyperLink runat="server" NavigateUrl="~/slides/me.aspx">Me</asp:HyperLink></li>
+                <li>InterWorks</li>
+                <li>Links</li>
+            </ul>
+            <h2>
+                Evil</h2>
+            <ul>
+                <li><asp:HyperLink runat="server" NavigateUrl="~/evil/throw.aspx">Throw</asp:HyperLink></li>
+            </ul>
+            <h2>
+                Protected</h2>
+            <ul>
+                <li><asp:HyperLink runat="server" NavigateUrl="~/protected/login.aspx">Login</asp:HyperLink></li>
+                <li><asp:HyperLink runat="server" NavigateUrl="~/protected/default.aspx">Default</asp:HyperLink></li>
+            </ul>
         </div>
         <div class="sideList">
             <h3>
