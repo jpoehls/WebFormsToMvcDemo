@@ -7,7 +7,7 @@
     <meta charset="utf-8" />
     <title>WebForms to MVC</title>
     <link rel="stylesheet" type="text/css" href="~/styles/main.css" />
-    <link rel="stylesheet" type="text/css" href="~/scripts/humane-themes/bold-dark.css"
+    <link rel="stylesheet" type="text/css" href="~/scripts/humane-themes/bold-light.css"
         media="screen" />
     <asp:ContentPlaceHolder ID="Head" runat="server">
     </asp:ContentPlaceHolder>
