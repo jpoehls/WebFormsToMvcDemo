@@ -28,7 +28,8 @@
             UbberBlog</h1>
         <ul>
             <li>
-                <asp:HyperLink runat="server" NavigateUrl="~/protected/login.aspx">Login</asp:HyperLink>
+                <asp:HyperLink runat="server" ID="lnkLogin" NavigateUrl="~/protected/login.aspx">Login</asp:HyperLink>
+                <asp:Label runat="server" ID="lblCurrentUser"></asp:Label>
             </li>
         </ul>
     </div>

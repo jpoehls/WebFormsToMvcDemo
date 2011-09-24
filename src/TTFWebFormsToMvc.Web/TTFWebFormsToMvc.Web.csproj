@@ -57,6 +57,7 @@
     <Content Include="Default.aspx" />
     <Content Include="Error.aspx" />
     <Content Include="Global.asax" />
+    <Content Include="protected\Logout.aspx" />
     <Content Include="scripts\humane-themes\bigbox.css" />
     <Content Include="scripts\humane-themes\bold-dark.css" />
     <Content Include="scripts\humane-themes\bold-light.css" />
@@ -112,6 +113,13 @@
       <DependentUpon>MainLayout.Master</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="protected\Logout.aspx.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="protected\Logout.aspx.designer.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+    </Compile>
     <Compile Include="protected\ProtectedLayout.master.cs">
       <DependentUpon>ProtectedLayout.master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

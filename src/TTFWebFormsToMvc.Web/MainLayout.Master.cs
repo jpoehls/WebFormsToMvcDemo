@@ -13,5 +13,15 @@ namespace TTFWebFormsToMvc.Web
         {
 
         }
+
+        protected void Page_PreRender(object sender, EventArgs e)
+        {
+            if (Request.IsAuthenticated)
+            {
+                lnkLogin.Text = "Logout";
+                lnkLogin.NavigateUrl = "~/protected/logout.aspx";
+                lblCurrentUser.Text = string.Format("({0})", Context.User.Identity.Name);
+            }
+        }
     }
 }

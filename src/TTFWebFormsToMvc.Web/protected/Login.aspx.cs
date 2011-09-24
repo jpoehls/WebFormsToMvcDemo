@@ -12,9 +12,6 @@ namespace TTFWebFormsToMvc.Web.admin
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            // Logout.
-            FormsAuthentication.SignOut();
-
             // Set default focus.
             SetFocus(txtUser);
         }
