@@ -9,7 +9,7 @@
 
 body
 {
-    font-family: 'Antic' , sans-serif;
+    font-family: 'Antic', sans-serif;
     font-size: 20px;
     margin: 0;
     padding: 0;
@@ -19,66 +19,90 @@ body
     letter-spacing: .08em;
 }
 
-a, a:visited, a:link {
+a, a:visited, a:link
+{
     color: lightblue;
 }
 
-a:hover {
-    color: #eee;
-    
-}
+    a:hover
+    {
+        color: #eee;
+    }
 
-input,select,textarea {
-    font-family: 'Antic' , sans-serif;
+input, select, textarea
+{
+    font-family: 'Antic', sans-serif;
     font-size: 20px;
     letter-spacing: .08em;
 }
 
-.horzFrame
+.horzFrame, .slideHeader
 {
     margin-top: 3em;
     border-top: 1px solid #eee;
     border-bottom: 1px solid #eee;
     padding: 1em;
     padding-left: 2em;
-    background-color:rgba(255,0,0,0.2);
+    background-color: rgba(255,0,0,0.2);
 }
 
-.horzFrame td {
-    padding: .3em;
+    .horzFrame td
+    {
+        padding: .3em;
+    }
+
+.slideHeader
+{
+    background-color: rgba(255,255,255,0.2);
 }
 
-.contentFrame 
+.contentFrame, .slideFrame
 {
     margin: 2em;
 }
 
-.post {
+.slideFrame
+{
+    margin-top: 0;
+    font-size: 4em;
+}
+
+    .slideFrame li
+    {
+        margin-bottom: .5em;
+    }
+
+.post
+{
     float: left;
     min-width: 600px;
     max-width: 900px;
 }
 
-.post .date {
-    font-size: .7em;
+    .post .date
+    {
+        font-size: .7em;
+    }
+
+    .post h2
+    {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+.sideList
+{
 }
 
-.post h2 {
-    margin-top: 0;
-    margin-bottom: 0;
-}
-
-.sideList {
-    
-}
-
-.projectListItem {
+.projectListItem
+{
     margin-top: 1em;
 }
 
-.projectListItem span {
-    font-size: .7em;
-}
+    .projectListItem span
+    {
+        font-size: .7em;
+    }
 
 th.side
 {
@@ -94,24 +118,26 @@ th.side
     margin-right: .2em;
     width: 100%;
     border-top: 1px solid #eee;
-    background-color:rgba(255,0,0,0.2);
+    background-color: rgba(255,0,0,0.2);
     text-align: right;
 }
 
-#footer h1
-{
-    font-size: 2.5em;
-    margin: .2em .5em;
-}
+    #footer h1
+    {
+        font-size: 2.5em;
+        margin: .2em .5em;
+    }
 
-#footer ul {
-    position: absolute;
-    top: 0;
-    left: 0;
-    margin: .5em 2em;
-    padding: 0;
-}
+    #footer ul
+    {
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin: .5em 2em;
+        padding: 0;
+    }
 
-#footer ul li {
-    list-style-type: none;
-}
+        #footer ul li
+        {
+            list-style-type: none;
+        }

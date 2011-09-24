@@ -69,6 +69,7 @@
     <Content Include="scripts\jquery-1.6.4.js" />
     <Content Include="scripts\jquery-1.6.4.min.js" />
     <Content Include="scripts\main.js" />
+    <Content Include="slides\Me.aspx" />
     <Content Include="styles\background1_blue.jpg" />
     <Content Include="styles\main.css" />
     <Content Include="Web.config" />
@@ -126,6 +127,13 @@
     </Compile>
     <Compile Include="protected\ProtectedLayout.master.designer.cs">
       <DependentUpon>ProtectedLayout.master</DependentUpon>
+    </Compile>
+    <Compile Include="slides\Me.aspx.cs">
+      <DependentUpon>Me.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="slides\Me.aspx.designer.cs">
+      <DependentUpon>Me.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
