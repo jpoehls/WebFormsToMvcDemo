@@ -52,6 +52,8 @@
     <Reference Include="System.Web.ApplicationServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="ajaxy\placeholder.txt" />
+    <Content Include="crud\placeholder.txt" />
     <Content Include="evil\Throw.aspx" />
     <Content Include="protected\Default.aspx" />
     <Content Include="protected\Login.aspx" />
