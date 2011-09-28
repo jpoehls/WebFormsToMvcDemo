@@ -8,7 +8,7 @@
 
 ## What I hope you get out of this
 
-* Recipe of sorts for taking an existing WebForms app you have and migrating it to MVC.
+* Recipe for taking an existing WebForms app you have and migrating it to MVC.
 * I want you to leave feeling confident and ready to add some MVC to your app on Monday morning.
 
 ## MVC Basics
@@ -47,7 +47,7 @@
 ## Step 4
 
 * Make the view accessible to authenticated users only.
-* Show how to add role-based authorization.
+* Show how to add role-based authorization. ([AuthorizeAttribute] on controller or action).
 
 ## Step 5
 

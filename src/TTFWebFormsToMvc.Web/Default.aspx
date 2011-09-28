@@ -9,20 +9,33 @@
             <h2>
                 Slides</h2>
             <ul>
-                <li><asp:HyperLink runat="server" NavigateUrl="~/slides/me.aspx">Me</asp:HyperLink></li>
+                <li>
+                    <asp:HyperLink runat="server" NavigateUrl="~/slides/me.aspx">Me</asp:HyperLink></li>
                 <li>InterWorks</li>
                 <li>Links</li>
             </ul>
             <h2>
                 Evil</h2>
             <ul>
-                <li><asp:HyperLink runat="server" NavigateUrl="~/evil/throw.aspx">Throw</asp:HyperLink></li>
+                <li>
+                    <asp:HyperLink runat="server" NavigateUrl="~/evil/throw.aspx">Throw</asp:HyperLink></li>
             </ul>
             <h2>
                 Protected</h2>
             <ul>
-                <li><asp:HyperLink runat="server" NavigateUrl="~/protected/login.aspx">Login</asp:HyperLink></li>
-                <li><asp:HyperLink runat="server" NavigateUrl="~/protected/default.aspx">Default</asp:HyperLink></li>
+                <li>
+                    <asp:HyperLink runat="server" NavigateUrl="~/protected/login.aspx">Login</asp:HyperLink></li>
+                <li>
+                    <asp:HyperLink runat="server" NavigateUrl="~/protected/default.aspx">Default</asp:HyperLink></li>
+            </ul>
+            <h2>
+                CRUD
+            </h2>
+            <ul>
+                <li>
+                    <asp:HyperLink runat="server" NavigateUrl="~/crud/list.aspx">List</asp:HyperLink></li>
+                <li>
+                    <asp:HyperLink NavigateUrl="~/crud/edit.aspx" runat="server">New</asp:HyperLink></li>
             </ul>
         </div>
         <div class="sideList">

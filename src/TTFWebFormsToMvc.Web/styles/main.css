@@ -104,9 +104,20 @@ input, select, textarea
         font-size: .7em;
     }
 
-th.side
+table.side th, th.side
 {
     text-align: right;
+}
+
+table th, table td
+{
+    vertical-align: top;
+}
+
+a.delete:link, a.delete:active, a.delete:visited
+{
+    font-weight: bold;
+    color: #ff7c7c;
 }
 
 #footer

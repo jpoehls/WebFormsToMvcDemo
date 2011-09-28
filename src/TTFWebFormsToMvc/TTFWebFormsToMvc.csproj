@@ -40,6 +40,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Data\Category.cs" />
+    <Compile Include="Data\Product.cs" />
+    <Compile Include="Data\ShippingOption.cs" />
+    <Compile Include="Data\StockOption.cs" />
     <Compile Include="EvilException.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Web\BasePage.cs">
