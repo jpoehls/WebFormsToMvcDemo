@@ -56,6 +56,9 @@ namespace TTFWebFormsToMvc.Data
 
         public static IEnumerable<Category> GetAll(int parentId = 0)
         {
+            // return ALL categories
+            return Categories;
+
             if (parentId == 0)
             {
                 // return top level categories

@@ -1,0 +1,62 @@
+﻿@import url(http://fonts.googleapis.com/css?family=Antic);
+/*@font-face {
+  font-family: 'Antic';
+  font-style: normal;
+  font-weight: 400;
+  src: url('Antic-Regular.eot');
+  src: local('Antic'), local('Antic-Regular'), url('Antic-Regular.woff') format('woff');
+}*/
+
+body {
+    font-family: Consolas;
+    width: 80%;
+    height: 80%;
+    margin: 0em auto;
+    /*border: 1px solid black;*/
+    padding: .5em;
+    font-size: 3em;
+    background-color: #eee;
+}
+
+a, a:link, a:active, a:visited
+{
+    text-decoration: none;
+    color: Navy;
+    
+}
+
+.home
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #ff5454;
+    width: 1em;
+    height: 1em;
+    cursor: pointer;
+}
+
+.big
+{
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 1.5em;
+    font-weight: bold;
+    letter-spacing: .1em;
+}
+
+ul
+{
+    margin-top: 1em;
+    margin-left: 2em;
+}   
+
+li
+{
+    line-height: 1.5em;
+}
+
+.smaller
+{
+    font-size: .8em;
+}

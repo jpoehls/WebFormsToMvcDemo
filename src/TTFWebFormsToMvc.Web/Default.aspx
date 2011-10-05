@@ -6,14 +6,14 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="Body" runat="server">
     <div class="contentFrame">
         <div class="post">
-            <h2>
+            <%--            <h2>
                 Slides</h2>
             <ul>
                 <li>
                     <asp:HyperLink runat="server" NavigateUrl="~/slides/me.aspx">Me</asp:HyperLink></li>
                 <li>InterWorks</li>
                 <li>Links</li>
-            </ul>
+            </ul>--%>
             <h2>
                 Evil</h2>
             <ul>

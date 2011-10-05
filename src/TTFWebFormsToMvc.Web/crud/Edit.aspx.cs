@@ -25,6 +25,10 @@ namespace TTFWebFormsToMvc.Web.crud
                 BindListControls();
             }
 
+            ClientScript.RegisterStartupScript(this.GetType(), "init",
+                string.Format("EditPage.init({{cblShippingOptionsId: '{0}'}});",
+                cblShippingOptions.ClientID), true);
+
             var editProduct = GetActiveProduct();
             var isEdit = (editProduct != null);
 
@@ -52,6 +56,7 @@ namespace TTFWebFormsToMvc.Web.crud
             }
 
             rblStock.SelectedValue = p.Stock.Id.ToString();
+
         }
 
         private void BindListControls()
@@ -74,6 +79,11 @@ namespace TTFWebFormsToMvc.Web.crud
             rblStock.SelectedIndex = 0;
         }
 
+        protected void ValidateShippingOptions(object sender, ServerValidateEventArgs e)
+        {
+            e.IsValid = cblShippingOptions.SelectedItem != null;
+        }
+
         protected void btnDelete_Click(object sender, EventArgs e)
         {
             Product.Delete(GetActiveProduct());
@@ -83,22 +93,26 @@ namespace TTFWebFormsToMvc.Web.crud
 
         protected void btnSave_Click(object sender, EventArgs e)
         {
-            var p = GetActiveProduct() ?? new Product();
-            p.Name = txtName.Text;
-            p.Price = Decimal.Parse(txtPrice.Text);
-            p.Category = Category.GetById(Int32.Parse(ddlCategory.SelectedValue));
-            p.Stock = StockOption.GetById(Int32.Parse(rblStock.SelectedValue));
-            
-            p.ShippingOptions.Clear();
-            foreach (ListItem item in cblShippingOptions.Items)
+            // Ensure the validators passed. (Incase JavaScript was disabled on the client.)
+            if (IsValid)
             {
-                if (item.Selected)
-                {
-                    p.ShippingOptions.Add(ShippingOption.GetById(Int32.Parse(item.Value)));
-                }
-            }
+                var p = GetActiveProduct() ?? new Product();
+                p.Name = txtName.Text;
+                p.Price = Decimal.Parse(txtPrice.Text);
+                p.Category = Category.GetById(Int32.Parse(ddlCategory.SelectedValue));
+                p.Stock = StockOption.GetById(Int32.Parse(rblStock.SelectedValue));
 
-            Product.Save(p);
+                p.ShippingOptions.Clear();
+                foreach (ListItem item in cblShippingOptions.Items)
+                {
+                    if (item.Selected)
+                    {
+                        p.ShippingOptions.Add(ShippingOption.GetById(Int32.Parse(item.Value)));
+                    }
+                }
+
+                Product.Save(p);
+            }
 
             Response.Redirect("list.aspx");
         }

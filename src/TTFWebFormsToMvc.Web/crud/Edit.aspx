@@ -4,6 +4,11 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="Head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="Body" runat="server">
+    <asp:ScriptManagerProxy runat="server">
+        <Scripts>
+            <asp:ScriptReference Path="~/scripts/crud/edit.js" />
+        </Scripts>
+    </asp:ScriptManagerProxy>
     <div class="contentFrame">
         <p>
             <asp:HyperLink runat="server" NavigateUrl="~/crud/List.aspx">Back to the list</asp:HyperLink></p>
@@ -23,7 +28,8 @@
                 </th>
                 <td>
                     <asp:TextBox runat="server" ID="txtPrice" />
-                    <asp:RequiredFieldValidator runat="server" ControlToValidate="txtPrice" ErrorMessage="Required" Display="Dynamic" />
+                    <asp:RequiredFieldValidator runat="server" ControlToValidate="txtPrice" ErrorMessage="Required"
+                        Display="Dynamic" />
                     <asp:RegularExpressionValidator runat="server" ControlToValidate="txtPrice" ErrorMessage="Must be a decimal"
                         ValidationExpression="^[0-9]+(\.[0-9][0-9])?$" />
                 </td>
@@ -42,8 +48,18 @@
                     <asp:Label runat="server" AssociatedControlID="cblShippingOptions">Shipping Options</asp:Label>
                 </th>
                 <td>
-                    <asp:CheckBoxList runat="server" ID="cblShippingOptions" />
-                    <!-- SUCKS: RequiredFieldValidators don't work with CheckBoxList controls. -->
+                    <table>
+                        <tr>
+                            <td>
+                                <asp:CheckBoxList runat="server" ID="cblShippingOptions" />
+                            </td>
+                            <td>
+                                <!-- SUCKS: RequiredFieldValidators don't work with CheckBoxList controls. -->
+                                <asp:CustomValidator runat="server" OnServerValidate="ValidateShippingOptions" ClientValidationFunction="EditPage.validateShippingOptions"
+                                    ErrorMessage="Required" />
+                            </td>
+                        </tr>
+                    </table>
                 </td>
             </tr>
             <tr>
