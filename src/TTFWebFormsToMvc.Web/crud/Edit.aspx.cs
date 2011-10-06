@@ -25,10 +25,12 @@ namespace TTFWebFormsToMvc.Web.crud
                 BindListControls();
             }
 
+            // init the JavaScript by passing in the ID of our shipping options checklist
             ClientScript.RegisterStartupScript(this.GetType(), "init",
                 string.Format("EditPage.init({{cblShippingOptionsId: '{0}'}});",
                 cblShippingOptions.ClientID), true);
 
+            // get the product being edited
             var editProduct = GetActiveProduct();
             var isEdit = (editProduct != null);
 

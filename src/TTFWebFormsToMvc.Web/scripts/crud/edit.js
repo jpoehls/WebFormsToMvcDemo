@@ -1,4 +1,7 @@
-﻿window.EditPage = (function () {
+﻿// * global EditPage variable
+// * static object
+// * wrapped in self-executing function so privates are private
+window.EditPage = (function () {
 
     var $cblShippingOptions;
 
@@ -17,4 +20,3 @@
     }
 
 }());
-
