@@ -115,3 +115,4 @@ Update your `Global.asax.cs`:
 		RegisterRoutes(RouteTable.Routes);
 	}
 
+Add `{E53F8FEA-EAE0-44A6-8774-FFD645390401};` to the `<ProjectTypeGuids>` in the web project file.

@@ -1,18 +1,37 @@
-﻿<?xml version="1.0"?>
+## Steps to add MVC 3 to Web Forms 4 project
+
+[Hanselman's Steps](http://www.hanselman.com/blog/IntegratingASPNETMVC3IntoExistingUpgradedASPNET4WebFormsApplications.aspx)
+
+Add these folders and files to the root of your Web Forms project:
+
+* Content
+* Controllers
+* Models
+* Scripts
+* Views
+* Global.asax
+
+Add these references to your Web Forms project:
+
+* Microsoft.CSharp
+* System.Web.Mvc
+* System.Web.WebPages
+* System.Web.Razor
+* System.ComponentModel.DataAnnotations
+
+Make the following changes to `Web.config`.
+=============================================
+
+<?xml version="1.0"?>
+
 <!--
   For more information on how to configure your ASP.NET application, please visit
-  http://go.microsoft.com/fwlink/?LinkId=152368
+  http://go.microsoft.com/fwlink/?LinkId=169433
   -->
 
 <configuration>
-    <connectionStrings>
-        <add name="ApplicationServices"
-             connectionString="data source=.\SQLEXPRESS;Integrated Security=SSPI;AttachDBFilename=|DataDirectory|aspnetdb.mdf;User Instance=true"
-             providerName="System.Data.SqlClient" />
-    </connectionStrings>
 
     <appSettings>
-        <add key="webpages:Version" value="1.0.0.0"/>
         <add key="ClientValidationEnabled" value="true"/>
         <add key="UnobtrusiveJavaScriptEnabled" value="true"/>
     </appSettings>
@@ -28,35 +47,6 @@
             </assemblies>
         </compilation>
 
-        <authentication mode="Forms">
-            <forms loginUrl="~/Account/LogOn" timeout="2880" />
-        </authentication>
-
-        <membership>
-            <providers>
-                <clear/>
-                <add name="AspNetSqlMembershipProvider" type="System.Web.Security.SqlMembershipProvider" connectionStringName="ApplicationServices"
-                     enablePasswordRetrieval="false" enablePasswordReset="true" requiresQuestionAndAnswer="false" requiresUniqueEmail="false"
-                     maxInvalidPasswordAttempts="5" minRequiredPasswordLength="6" minRequiredNonalphanumericCharacters="0" passwordAttemptWindow="10"
-                     applicationName="/" />
-            </providers>
-        </membership>
-
-        <profile>
-            <providers>
-                <clear/>
-                <add name="AspNetSqlProfileProvider" type="System.Web.Profile.SqlProfileProvider" connectionStringName="ApplicationServices" applicationName="/" />
-            </providers>
-        </profile>
-
-        <roleManager enabled="false">
-            <providers>
-                <clear/>
-                <add name="AspNetSqlRoleProvider" type="System.Web.Security.SqlRoleProvider" connectionStringName="ApplicationServices" applicationName="/" />
-                <add name="AspNetWindowsTokenRoleProvider" type="System.Web.Security.WindowsTokenRoleProvider" applicationName="/" />
-            </providers>
-        </roleManager>
-
         <pages>
             <namespaces>
                 <add namespace="System.Web.Helpers" />
@@ -67,7 +57,6 @@
                 <add namespace="System.Web.WebPages"/>
             </namespaces>
         </pages>
-
     </system.web>
 
     <system.webServer>
@@ -83,4 +72,43 @@
             </dependentAssembly>
         </assemblyBinding>
     </runtime>
+
 </configuration>
+
+======================================================
+Update your `Global.asax.cs`:
+
+	public static void RegisterGlobalFilters(GlobalFilterCollection filters)
+	{
+		filters.Add(new HandleErrorAttribute());
+	}
+ 
+	public static void RegisterRoutes(RouteCollection routes)
+	{
+		routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
+ 
+            routes.MapPageRoute("Default_aspx", "", "~/Default.aspx");
+
+            routes.MapRoute(
+                "Default", // Route name
+                "{controller}/{action}/{id}", // URL with parameters
+                new
+                {
+                    controller = "Home",
+                    action = "Index",
+                    id = UrlParameter.Optional
+                } // Parameter defaults
+            );
+ 
+	}
+ 
+	protected void Application_Start()
+	{
+		AreaRegistration.RegisterAllAreas();
+ 
+		RegisterGlobalFilters(GlobalFilters.Filters);
+		RegisterRoutes(RouteTable.Routes);
+	}
+
+==============================================
+Add `{E53F8FEA-EAE0-44A6-8774-FFD645390401};` to the `<ProjectTypeGuids>` in the web project file.

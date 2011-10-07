@@ -30,6 +30,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Web" />
@@ -58,9 +59,14 @@
     <Compile Include="Web\BasePage.cs">
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
+    <Compile Include="Web\ClientScriptDebugModeHelper.cs" />
+    <Compile Include="Web\CustomRequestValidator.cs" />
     <Compile Include="Web\CustomViewPage.cs" />
     <Compile Include="Web\HandleAjaxErrorAttribute.cs" />
+    <Compile Include="Web\HtmlHelpers.cs" />
+    <Compile Include="Web\HttpContextHelpers.cs" />
     <Compile Include="Web\JsonHelpers.cs" />
+    <Compile Include="Web\MvcScriptManager.cs" />
     <Compile Include="Web\SecureController.cs" />
     <Compile Include="Web\SessionDataHelpers.cs" />
   </ItemGroup>

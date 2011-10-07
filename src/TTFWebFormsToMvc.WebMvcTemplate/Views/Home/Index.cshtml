@@ -1,8 +1,12 @@
-﻿@{
+﻿@model TTFWebFormsToMvc.WebMvcTemplate.Models.StrongViewModel
+
+@{    
     ViewBag.Title = "Home Page";
 }
-
 <h2>@ViewBag.Message</h2>
+<h3>@Model.FirstName</h3>
+<asp:Label id="sdf" text="@Model.FirstName" />
 <p>
-    To learn more about ASP.NET MVC visit <a href="http://asp.net/mvc" title="ASP.NET MVC Website">http://asp.net/mvc</a>.
+    To learn more about ASP.NET MVC visit <a href="http://asp.net/mvc" title="ASP.NET MVC Website">
+        http://asp.net/mvc</a>.
 </p>

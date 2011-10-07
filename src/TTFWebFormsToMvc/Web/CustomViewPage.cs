@@ -18,7 +18,7 @@ namespace TTFWebFormsToMvc.Web
 
         public CustomViewPage()
         {
-            _securityContext = new SecurityContext(Context);
+            _securityContext = new SecurityContext();
         }
 
         public override void Execute()

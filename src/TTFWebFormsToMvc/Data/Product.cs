@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 
@@ -50,10 +51,20 @@ namespace TTFWebFormsToMvc.Data
         }
 
         public int Id { get; private set; }
+
+        [Required]
         public string Name { get; set; }
+
+        [Required]
         public decimal Price { get; set; }
+
+        [Required]
         public Category Category { get; set; }
+
+        [Required]
         public IList<ShippingOption> ShippingOptions { get; set; }
+
+        [Required]
         public StockOption Stock { get; set; }
 
         public static IEnumerable<Product> GetAll()
@@ -74,12 +85,14 @@ namespace TTFWebFormsToMvc.Data
         public static void Delete(Product product)
         {
             Products.Remove(product);
+            Products.RemoveAll(p => p.Id == product.Id);
         }
 
         public static void Save(Product product)
         {
             if (!Products.Contains(product))
             {
+                Products.RemoveAll(p => p.Id == product.Id);
                 Products.Add(product);
             }
         }

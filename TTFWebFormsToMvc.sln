@@ -9,13 +9,14 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TTFWebFormsToMvc.Tests", "s
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{5D371800-3F10-4B2F-BEA7-B9E524D326EF}"
 	ProjectSection(SolutionItems) = preProject
+		AddingMvc.md = AddingMvc.md
 		outline.md = outline.md
 		readme.md = readme.md
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TTFWebFormsToMvc.WebPreMvc", "src\TTFWebFormsToMvc.WebPreMvc\TTFWebFormsToMvc.WebPreMvc.csproj", "{E0ED72E6-5F89-49CF-B1E2-EB200FF94DC5}"
 EndProject
-Project("{00000000-0000-0000-0000-000000000000}") = "TTFWebFormsToMvc.WebMvcTemplate", "src\TTFWebFormsToMvc.WebMvcTemplate\TTFWebFormsToMvc.WebMvcTemplate.csproj", "{7028C94D-BED6-4F69-B236-0B366953924A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TTFWebFormsToMvc.WebMvcTemplate", "src\TTFWebFormsToMvc.WebMvcTemplate\TTFWebFormsToMvc.WebMvcTemplate.csproj", "{7028C94D-BED6-4F69-B236-0B366953924A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

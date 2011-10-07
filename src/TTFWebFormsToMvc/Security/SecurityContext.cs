@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Web;
 using System.Web.Security;
+using TTFWebFormsToMvc.Web;
 
 namespace TTFWebFormsToMvc.Security
 {
@@ -11,9 +12,9 @@ namespace TTFWebFormsToMvc.Security
     {
         private HttpContextBase _context;
 
-        public SecurityContext(HttpContextBase context)
+        public SecurityContext()
         {
-            _context = context;
+            _context = HttpContext.Current.Wrap();
         }
 
         public string Username

@@ -9,5 +9,6 @@ namespace TTFWebFormsToMvc.Security
     public interface ISecurityContext
     {
         string Username { get; }
+        bool UserIsInRole(string roleName);
     }
 }

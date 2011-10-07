@@ -1,0 +1,30 @@
+﻿@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Index</title>
+    <script src="@Url.Content("~/scripts/jquery-1.6.4.min.js")"></script>
+    <script>
+        function sendPost() {
+            $.ajax({
+                type: 'POST',
+                url: '@Url.Content("~/samples/home/skip-validation")',
+                data: { input: '<p>something unsafe</p>' },
+                success: function () {
+                    alert("post successful!");
+                },
+                error: function () {
+                    alert('post failed!');
+                }
+            });
+        }
+</script>
+</head>
+<body>
+    <div>
+        <input type="button" value="post it" onclick="sendPost();" />
+    </div>
+</body>
+</html>

@@ -8,7 +8,7 @@
         <a href="http://www.twitter.com/joshuapoehls">@JoshuaPoehls</a></p>
     <ul>
         <li>joshua@zduck.com</li>
-        <li>Today is @ <a href="http://goo.gl/wgnKf">http://goo.gl/wgnKf</a></li>
+        <li>Code is at <a href="http://goo.gl/wgnKf">http://goo.gl/wgnKf</a></li>
         <li><b>ASP.NET WebForms to MVC:</b><br />
             <span class="smaller">Real-world tricks to make the switch</span></li>
     </ul>

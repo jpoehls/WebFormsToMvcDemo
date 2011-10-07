@@ -1,0 +1,19 @@
+﻿@{
+    Layout = "~/Areas/Protected/Views/Shared/_ProtectedLayout.cshtml";
+}
+<div class="contentFrame">
+    <p>
+        ... imagine secure content here ...</p>
+    @if (SecurityContext.UserIsInRole("admin"))
+    {
+        <p>
+            <b>This only shows for ADMIN users!</b></p>
+    }
+    @if(ViewBag.ShowWelcomeMessage) {
+        <script>
+            $(function () {
+                humane('Hello @SecurityContext.Username!');
+            });
+</script>
+        }
+</div>

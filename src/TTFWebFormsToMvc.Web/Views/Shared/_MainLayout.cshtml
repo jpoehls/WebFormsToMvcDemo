@@ -1,0 +1,37 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>WebForms to MVC</title>
+    <link rel="stylesheet" type="text/css" href="@Url.Content("~/styles/main.css")" />
+    <link rel="stylesheet" type="text/css" href="@Url.Content("~/scripts/humane-themes/bold-light.css")"
+        media="screen" />
+    @RenderSection("Head", false)
+</head>
+<body>
+    @Html.ScriptManager().AddScriptHere("~/scripts/jquery-1.6.4.min.js")
+    @Html.ScriptManager().AddScript("~/scripts/humane.min.js")
+    @Html.ScriptManager().AddScript("~/scripts/main.js")
+    @RenderBody()
+    <div id="footer">
+        <h1>
+            WebForms to MVC</h1>
+        <ul>
+            <li><a href="@Url.Content("~/default.aspx")">Home</a> | <a href="@Url.Content("~/slides/me.aspx")">
+                Slides</a> |
+                @if (!Request.IsAuthenticated)
+                {
+                    <a href="@Url.Content("~/protected/login.aspx")">Login</a>
+                }
+                else
+                {
+                    <a href="@Url.Content("~/protected/logout.aspx")">Logout</a>
+                    <span>@User.Identity.Name
+                    </span> 
+                }
+            </li>
+        </ul>
+    </div>
+    @Html.ScriptManager().RenderScripts()
+</body>
+</html>
